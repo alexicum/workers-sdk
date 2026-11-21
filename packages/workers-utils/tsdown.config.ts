@@ -7,7 +7,7 @@ export default defineConfig([
 		// export, and the metrics registry bundled into Workers without nodejs_compat.
 		entry: ["src/browser.ts", "src/prometheus-metrics.ts"],
 		clean: true,
-		platform: "node",
+		platform: "browser",
 		outputOptions: { keepNames: true },
 		format: "esm",
 		deps: {
